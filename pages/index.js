@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "../components";
+import Services from '../components/Services';
 import styles from '../style';
 
 export default function Home() {
@@ -27,12 +28,11 @@ export default function Home() {
 
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-              <Stats />
-              <Business />
-              <Billing />
-              <CardDeal />
-              <Testimonials />
-              <Clients />
+            <Services/>
+            <Billing />
+            <CardDeal />
+            <Testimonials />
+            <Stats />
               <CTA />
             </div>
           </div>

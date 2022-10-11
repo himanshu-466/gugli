@@ -14,7 +14,7 @@ const Billing = () => (
     </div>
 
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
+      <h2 className={`${styles.heading2} text-3xl lg:text-4xl`} style={{ lineHeight: "56px" }}>
         Easily control your <br className="sm:block hidden" /> billing &
         invoicing
       </h2>

@@ -1,12 +1,13 @@
 import { card } from "../public";
 import styles, { layout } from "../style";
+import Button from "./Button";
 
 import Image from "next/image"
 
 const CardDeal = () => (
-  <section className={layout.section}>
+  <section className={`${layout.section}`}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
+      <h2 className={`${styles.heading2} text-3xl lg:text-4xl`} style={{ lineHeight: "56px" }}>
         Find a better card deal <br className="sm:block hidden" /> in few easy
         steps.
       </h2>
@@ -15,6 +16,7 @@ const CardDeal = () => (
         aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
       </p>
 
+      <Button styles={`mt-10`} />
 
     </div>
 
